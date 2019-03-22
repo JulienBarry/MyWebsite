@@ -1,0 +1,319 @@
+
+  #Phase1 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 64px;
+    height: 36vh;
+    background-image: url('../../assets/PersoenlichesImg1.jpg');
+    background-size: cover;
+    z-index: -3;
+}
+
+#ImgBox1 {
+  position: absolute;
+  height: 60%;
+  max-width: auto;
+  right: 5%;
+}
+
+#ImgPetra {
+  height: 100%;
+  width: auto;
+  border-radius: 100px;
+}
+
+#Phase1 p{
+
+  font-size: 28pt;
+  text-align: center;
+  position: relative;
+  transform: translate(0px, -50%);
+  top: 50%;
+  margin-left: 40%;
+  margin-right: 40%;
+  background-color: #d0e6e3;
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+  font-family: 'Gabriola';
+    }
+
+
+
+#Phase2 {
+  height: 58vh;
+  position: -webkit-sticky;
+    position: sticky;
+    top: 64px; 
+z-index: 0;
+ 
+}
+
+#ImgBox2 {
+  height: 100%;
+  width: 28%;
+  float: left;
+}
+
+#ImgTea {
+  height: 100%;
+  width: 100%;
+}
+
+#textBox {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 72%;
+  float: right;
+}
+
+.TextP2 {
+  font-size: 19pt;
+  width: 70%;
+  font-family: 'Gabriola';
+  border-radius: 20px;
+  padding: 5px 5px 5px 5px;
+}
+
+#Phase3 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  height: 60vh;
+  background-image: url('../../assets/full-bloom.png');
+  padding: 30px 50px 50px 50px;
+  z-index: 1;
+}
+
+#Phase3 p {
+  padding: 20px 20px 20px 20px;
+  font-size: 35pt;
+  color: rgb(0, 0, 0);
+  font-family: 'Gabriola';
+  text-align: center;
+  width: 40%;
+}
+
+#Phase4 {
+  text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 64px;
+height: 40vh;
+display: flex;
+    align-items: center;
+    justify-content: center;
+background-color: #d0e6e3;
+-webkit-transition: background-color 1s ease-out;
+-moz-transition: background-color 1s ease-out;
+-o-transition: background-color 1s ease-out;
+transition: background-color 1s ease-out;
+padding: 50px 50px 50px 50px;
+z-index: 2;
+}
+
+/* #Phase4:hover {
+  background-color: rgb(255, 255, 255);
+}
+ */
+#Phase4 p {
+padding: 20px 20px 20px 20px;
+width: 40%;
+font-size: 24pt;
+font-family: 'Gabriola';
+color: rgb(0, 0, 0);
+background-color: #d0e6e3;
+border-radius: 50px;
+}
+
+
+
+
+#Phase5 {
+  height: 80vh;
+  position: relative;
+  background-image: url('../../assets/PersoenlichesImgP5.jpg');
+  background-size: cover;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#TextP5 {
+  font-size: 28pt;
+  text-align: center;
+  position: relative;
+  width: 45%;
+  font-family: 'Gabriola';
+  background-color: rgba(255, 255, 255, 0.692);
+  border-radius: 25px;
+  padding: 10px 10px 10px 10px;
+}
+
+
+
+
+/*  scroll down arrows */
+
+.arrow{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-93%);
+  }
+  .arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid rgb(0, 0, 0);
+    border-right: 5px solid rgb(0, 0, 0);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+  }
+  .arrow span:nth-child(2){
+    animation-delay: -0.2s;
+  }
+  .arrow span:nth-child(3){
+    animation-delay: -0.4s;
+  }
+  @keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(10px,10px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(40px,40px);
+    }
+  }
+  
+  /*  scroll down arrows end */
+
+
+  @media only screen and (min-height: 500px) and (max-width: 450px) {
+    #Phase1 {
+      position: sticky;
+      top: 56px;
+      height: 14vh;
+      background-image: url('../../assets/PersoenlichesImg1.jpg');
+      background-size: cover;
+      z-index: -3;
+  }
+
+  #Phase1 p {
+
+    font-size: 20pt;
+    text-align: center;
+    position: relative;
+    -webkit-transform: translate(0px, -50%);
+    transform: translate(0px, -50%);
+    top: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #d0e6e3;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    font-family: 'Gabriola';
+
+}
+
+#ImgBox1 {
+  top: 20%;
+  left: 2%;
+  height: 55%;
+}
+
+#Phase2 {
+  background-color: #ffffff;
+  height: 65vh;
+  position: -webkit-sticky;
+  position: initial;
+  top: 64px;
+  z-index: 0;
+
+}
+
+#ImgBox2 {
+  height: 45%;
+  width: 50%;
+  -webkit-transform: translate(50%);
+  transform: translate(50%);
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#textBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+  .TextP2 {
+    font-size: 10pt;
+    width: 70%;
+    font-family: 'Gabriola';
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+#Phase3 {
+  top: 50px;
+  padding: 50px;
+}
+
+#Phase3 p {
+  font-size: 28pt;
+  color: rgb(0, 0, 0);
+  font-family: 'Gabriola';
+  text-align: center;
+  width: 100%;
+}
+
+#Phase4 {
+  top: 55px;
+}
+
+#Phase4 p {
+  padding: 20px 20px 20px 20px;
+  width: 100%;
+  font-size: 13pt;
+  font-family: 'Gabriola';
+  color: rgb(0, 0, 0);
+  background-color: #d0e6e3;
+  border-radius: 50px;
+}
+
+#Phase5 {
+  background-size: cover;
+}
+
+#TextP5 {
+
+  font-size: 16pt;
+  text-align: center;
+  position: relative;
+  width: 77%;
+  font-family: 'Gabriola';
+  background-color: rgba(255, 255, 255, 0.692);
+  border-radius: 25px;
+  padding: 10px 10px 10px 10px;
+
+}
+
+  }
+
+

@@ -1,0 +1,123 @@
+#ModalPhase1 p {
+  font-size: 28pt;
+  text-align: center;
+  position: relative;
+  transform: translate(0px, -50%);
+  top: 50%;
+  margin-left: 30%;
+  margin-right: 30%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+  font-family: 'Times New Roman';
+}
+
+
+#ModalPhase1 {
+  height: 30vh;
+  background-image: url('../../assets/ModalVNImg1.jpg');
+}
+
+#ModelPhase2 {
+  height: 5vh;
+  background-color: rgb(228, 228, 228);
+}
+
+#ModalPhase3 {
+  height: 50vh;
+  display: flex;
+}
+
+#ModalImg2 {
+  height: 100%;
+  width: 45%;
+  background-image: url('../../assets/ModalVNImg2.PNG');
+}
+
+#ModalText {
+  height: 100%;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ModalText p {
+  font-size: 16pt;
+  width: 85%;
+  font-family: 'Gabriola';
+  border-radius: 20px;
+  padding: 5px 5px 5px 5px;
+}
+
+
+#ModalPhase4 {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bfe2ca;
+}
+
+#ModalPhase4 p {
+  padding: 20px 20px 20px 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 35pt;
+  background-color: #bfe2ca;
+  font-family: 'Gabriola';
+  border-radius: 50px;
+  text-align: center;
+}
+
+#ModalPhase5 {
+  height: 30vh;
+  background-color: rgb(228, 228, 228);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ModalPhase5 p {
+  font-size: 19pt;
+  width: 45%;
+  font-family: 'Gabriola';
+  border-radius: 20px;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+}
+
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100vh;
+  overflow: auto;
+  display: none;
+  padding: 0 20px;
+  z-index: 1000;
+}
+  
+.modal-inner {
+  background-color: #fff;
+  border-radius: 3px;
+  width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Placed on the body while a modal is open to prevent scrolling. */
+.showing-modal {
+  overflow: hidden;
+  position: fixed;
+}
+
+/* So the scrollbar calculation is correct. */
+body {
+  margin: 0;
+}
+
+

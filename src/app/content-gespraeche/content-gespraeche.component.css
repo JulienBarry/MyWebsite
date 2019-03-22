@@ -1,0 +1,250 @@
+#Phase1 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 64px;
+    height: 40vh;
+    background-image: url('../../assets/GespraecheImg1.jpg');
+    background-size: cover;
+    z-index: -3;
+}
+
+audio {
+  display: none;
+}
+
+
+
+
+.linkAudioSource{
+  color: white;
+  position: absolute;
+  margin-left: 10px;
+  transform: translate(0,-30px);
+  z-index: 5;
+}
+
+.linkAudioSource:hover {
+  cursor: pointer !important;
+  text-decoration: none;
+}
+
+
+#Phase1 p{
+
+  font-size: 28pt;
+  text-align: center;
+  position: relative;
+  transform: translate(0px, -50%);
+  top: 50%;
+  margin-left: 40%;
+  margin-right: 40%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+  font-family: 'Gabriola';
+}
+
+#Phase2 {
+  height: 53.5vh;
+  position: -webkit-sticky;
+    position: sticky;
+    top: 64px; 
+}
+
+#textBox:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+#ImgBoxP2 {
+  height: 100%;
+  width: 28%;
+  float: right;
+}
+
+#ImgPlant {
+  height: 100%;
+  width: 100%;
+}
+
+#textBox {
+  background-color: #bfe2ca;
+    -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  height: 100%;
+  width: 72%;
+  float: left;
+}
+
+
+
+.TextP2 {
+  text-align: center;
+  font-size: 35pt;
+  width: 50%;
+  font-family: 'Gabriola';
+  background-color:  #bfe2ca;
+  border-radius: 20px;
+  padding: 5px 5px 5px 5px;
+}
+
+#Phase3 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  height: 60vh;
+  background-color: #fff;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Phase3 p {
+  padding: 20px 20px 20px 20px;
+  font-size: 19pt;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  width: 70%;
+}
+
+
+.TextP3 {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  height: 100%;
+  width: 70%;
+  float: left;
+  padding: 5px 5px 5px 5px;
+  font-family: 'Gabriola';
+}
+
+.ImgBoxP3 {
+  height: 100%;
+  width: 30%;
+}
+
+ #ImgForest{
+  height: 100%;
+  width: 100%;
+} 
+
+/*  scroll down arrows */
+
+.arrow{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-93%);
+  }
+  .arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid rgb(0, 0, 0);
+    border-right: 5px solid rgb(0, 0, 0);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+  }
+  .arrow span:nth-child(2){
+    animation-delay: -0.2s;
+  }
+  .arrow span:nth-child(3){
+    animation-delay: -0.4s;
+  }
+  @keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(0px,0px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(30px,30px);
+    }
+  }
+  
+  /*  scroll down arrows end */
+
+
+
+  @media only screen and (min-height: 500px) and (max-width: 450px) {
+    #Phase1{
+      top: 55px;
+      background-size: cover;
+      height: 25vh;
+    }
+
+    #Phase1 p{
+      font-size: 17pt;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+
+    #Phase2 {
+      height: 30vh;
+      top: 55px;
+      z-index: -1;
+  }
+
+.arrow{
+  display: none;
+}
+
+  #textBox {
+    width: 52%;
+  }
+
+    .TextP2 {
+      font-size: 16pt;
+      width: 85%;
+      margin-right: 10px;
+  }
+
+  #ImgBoxP2{
+    width: 48%;
+}
+
+#Phase3 {
+  position: initial;
+  top: 0;
+  height: 135vh;
+  background-color: #fff;
+  z-index: 0;
+  padding-top: 60px;
+  display: block;
+}
+
+.ImgBoxP3 {
+  height: 23%;
+  width: 50%;
+  transform: translate(50%);
+}
+.TextP3 {
+  height: 70%;
+  width: 100%;
+  margin-top: 50px;
+
+}
+
+#Phase3 p {
+  font-size: 12pt;
+  width: 80%;
+  margin-left: 20px;
+}
+
+#PhaseX {
+  background-image: none;
+  background-color: #bfe2ca;
+}
+
+  }

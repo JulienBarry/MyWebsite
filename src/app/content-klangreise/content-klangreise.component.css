@@ -1,0 +1,192 @@
+#Phase1 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 64px;
+    height: 35vh;
+    background-image: url('../../assets/KlangreiseImg1.jpg');
+    z-index: -3;
+}
+
+#Phase1 p{
+
+  font-size: 28pt;
+  text-align: center;
+  position: relative;
+  transform: translate(0px, -50%);
+  top: 50%;
+  margin-left: 40%;
+  margin-right: 40%;
+  background-color: #8bacbd;
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+  font-family: 'Gabriola';
+    }
+
+
+
+#Phase2 {
+  
+  background-color: white;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+  height: 60vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 64px; 
+  z-index: 0;
+    
+}
+
+
+
+
+#ImgBox {
+  height: 100%;
+  width: 28%;
+  float: left;
+}
+
+#ImgFlowers {
+  height: 100%;
+  width: 100%;
+}
+
+#textBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 72%;
+  float: right;
+}
+
+.TextP2 {
+  text-align: center;
+  font-size: 22pt;
+  width: 80%;
+  font-family: 'Gabriola';
+  border-radius: 20px;
+  padding: 5px 5px 5px 5px;
+}
+
+#Phase3 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  height: 60vh;
+  background-image: url('../../assets/full-bloom.png');
+  padding: 30px 50px 50px 50px;
+  z-index: 1;
+}
+
+#Phase3 p {
+  padding: 20px 20px 20px 20px;
+  font-size: 35pt;
+  color: rgb(0, 0, 0);
+  font-family: 'Gabriola';
+  border-radius: 50px;
+  text-align: center;
+  width: 50%;
+}
+
+
+
+
+
+/*  scroll down arrows */
+
+.arrow{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-93%);
+  }
+  .arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid rgb(0, 0, 0);
+    border-right: 5px solid rgb(0, 0, 0);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+  }
+  .arrow span:nth-child(2){
+    animation-delay: -0.2s;
+  }
+  .arrow span:nth-child(3){
+    animation-delay: -0.4s;
+  }
+  @keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(0px,0px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(30px,30px);
+    }
+  }
+  
+  /*  scroll down arrows end */
+
+
+  @media only screen and (min-height: 500px) and (max-width: 450px) {
+  #Phase1 {
+    top: 55px;
+    height: 23vh;
+    background-size: cover;
+  }
+
+  #Phase1 p {
+    font-size: 21pt;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  #Phase2 {
+    height: 108vh;
+    position: initial;
+    padding-top: 35px;
+  }
+
+  #ImgBox {
+    height: 25%;
+    width: 50%;
+    transform: translate(50%);
+  }
+
+  #textBox {
+    height: 65%;
+    width: 100%;
+  }
+
+  .TextP2 {
+    font-size: 14pt;
+    width: 74%;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.arrow {
+  display: none;
+}
+
+#Phase3 {
+  top: 55px;
+}
+
+#Phase3 p {
+  font-size: 22pt;
+  width: 100%;
+}
+
+}

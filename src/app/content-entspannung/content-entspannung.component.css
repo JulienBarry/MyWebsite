@@ -1,0 +1,291 @@
+
+#Phase1 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 64px;
+    height: 40vh;
+    background-image: url('../../assets/EntspannungImg1.jpg');
+    z-index: -3;
+}
+
+#Phase1 p{
+
+  font-size: 28pt;
+  text-align: center;
+  position: relative;
+  transform: translate(0px, -50%);
+  top: 50%;
+  margin-left: 35%;
+  margin-right: 35%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+  font-family: 'Gabriola';
+}
+
+
+
+#Phase2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 53.5vh;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#Phase2 p {
+  padding: 20px 20px 20px 20px;
+  font-size: 20pt;
+  color: rgb(0, 0, 0);
+  border-radius: 50px;
+  width: 75%;
+  height: auto;
+  font-family: 'Gabriola';
+}
+
+
+.TextP2 {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  height: 100%;
+  width: 72%;
+  float: left;
+  background-color: white;
+}
+
+.ImgBoxP2 {
+  height: 100%;
+  width: 28%;
+}
+
+ #ImgMuster{
+  height: 100%;
+  width: 100%;
+} 
+
+
+
+
+.Phase3Titel {
+    position: relative;
+   height: 10vh;
+    position: -webkit-sticky;
+      position: sticky;
+      top: 64px;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32pt;
+      background-color: #d1d2c2;
+      font-family: 'Gabriola';
+      border-top: solid;
+  border-bottom: solid;
+  border-width: 2px;
+  }
+  
+  #Phase3 {
+    background-image: url('../../assets/full-bloom.png');
+      position: -webkit-sticky;
+      position: sticky;
+      top: 158px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+      z-index: 1;
+  }
+
+/*  scroll down arrows */
+
+.arrow{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-93%);
+  }
+  .arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid rgb(0, 0, 0);
+    border-right: 5px solid rgb(0, 0, 0);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+  }
+  .arrow span:nth-child(2){
+    animation-delay: -0.2s;
+  }
+  .arrow span:nth-child(3){
+    animation-delay: -0.4s;
+  }
+  @keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(0px,0px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(30px,30px);
+    }
+  }
+  
+  /*  scroll down arrows end */
+
+
+
+
+.List{
+    width:850px;
+    }
+    .List ul {
+    margin: 0;
+    margin-left: 1em;
+    padding: 0;
+    
+    }
+    .List ul li{
+    position: relative;
+    margin-bottom: 1.5em;
+    padding: 0.5em;
+    background-color: #d1d2c2;
+    border-radius: 50px;
+    padding-left: 58px;
+    padding-top: 20px;
+    height: 70px;
+    
+    }
+    
+    .List a{
+    color:rgb(0, 0, 0);
+    font-size:27px;
+    font-family: 'Gabriola';
+    }
+    
+    .List li:hover{
+    box-shadow:inset -1em 0 burlywood;
+    -webkit-transition: box-shadow 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: box-shadow 0.5s;
+    
+    }
+    
+    .List ul li:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    position: absolute;
+    top: -0.3em;
+    left: -0.5em;
+    width: 1.8em;
+    height: 1.2em;
+    font-size: 2em;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: burlywood;
+    transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    z-index: 698769;
+    overflow: hidden;
+    vertical-align: middle;
+    content: "\f06c";
+    border-radius: 5px;
+    font-family: "Font Awesome 5 Free";
+    }
+
+
+
+@media only screen and (min-height: 500px) and (max-width: 450px) and (orientation: portrait) {
+
+
+#Phase1 {
+  top: 56px;
+  height: 20vh;
+  background-size: cover;
+}
+
+#Phase1 p{
+    font-size: 17pt;
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+#Phase2 {
+  height: 170vh;
+  display: block;
+  background-color: white;
+  position: initial;
+  padding-top: 80px;
+}
+
+.arrow {
+  display: none;
+}
+
+.ImgBoxP2 {
+  height: 15%;
+  width: 50%;
+  transform: translate(50%);
+}
+
+.TextP2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85%;
+  width: 100%;
+  background-color: white;
+}
+
+#Phase2 p {
+  font-size: 16pt;
+  width: 80%; 
+}
+
+.Phase3Titel{
+  top: 56px;
+  z-index: 2;
+}
+
+#Phase3 {
+  top: 122px;
+  height: 85vh;
+}
+
+.List {
+  width: 315px;
+}
+
+.List ul li {
+
+  position: relative;
+  margin-bottom: 1.5em;
+  padding: 0.5em;
+      padding-top: 0.5em;
+      padding-left: 0.5em;
+  background-color: #d1d2c2;
+  border-radius: 50px;
+  padding-left: 52px;
+  padding-top: 6px;
+  height: 61px;
+
+}
+
+.List a {
+
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: 'Gabriola';
+
+}
+
+  }

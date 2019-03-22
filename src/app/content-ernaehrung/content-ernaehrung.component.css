@@ -1,0 +1,434 @@
+#Phase1 p{
+    font-size: 32pt;
+    text-align: center;
+    position: relative;
+    transform: translate(0px, -50%);
+    top: 50%;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    font-family: 'Gabriola';
+  }
+
+  
+  #Phase1 {
+    height: 30vh;
+    background-image: url('../../assets/ErnaehrungImg1.jpg');
+    
+  }
+  
+h1 {
+  font-size: 23pt;
+  font-family: 'Gabriola';
+  text-align: center;
+  transform: translate(0, -50%);
+  /* background-color: #bfe2ca; */
+    border-radius: 50px;
+  margin-left: 14%;
+  margin-right: 14%;
+  padding: 20px 20px 20px 20px;
+
+}
+
+  #Phase2 {
+    height: 50vh;
+    display: flex; 
+      align-items: center;
+      justify-content: center;
+    background-color: rgb(228, 228, 228);
+    
+  }
+  
+  #Phase3 {
+    height: 160vh;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: #bfe2ca;
+  }
+
+.HorizontalSquares {
+  width: 100%;
+  display: flex;
+  
+}
+.AllSquares {
+  width: 50%;
+  transform: translate(0, 45%);
+}
+
+.TextBoxLast {
+    height: 40vh;
+    width: 50%;
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+  .TextBox {
+    height: 40vh;
+    width: 50%;
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .TextBox:hover {
+    cursor: pointer;
+    background-color: #bfe2e4;
+}
+
+#infoVN, #infoGW, #infoAVS {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  font-family: 'Gabriola';
+  font-size: 18pt;
+}
+
+#infoVN:before, #infoGW:before, #infoAVS:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #000000;
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .25s linear;
+}
+
+.TextBox:hover > #infoVN:before, #infoVN:focus:before, .TextBox:hover > #infoGW:before, #infoGW:focus:before, .TextBox:hover > #infoAVS:before, #infoAVS:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+  .Food {
+    height: 40vh;
+    width: 50%;
+    /* transform: translate(0px, 50%); */
+  }
+
+  #ImgFood {
+    height: 100%;
+    width: 100%;
+  }
+
+  .Water {
+    height: 40vh;
+    width: 50%;
+    /* transform: translate(0px, 50%); */
+  }
+
+  #ImgWater {
+    height: 100%;
+    width: 100%;
+  }
+
+  .Herbs {
+    height: 40vh;
+    width: 50%;
+    /* transform: translate(0px, 50%); */
+  }
+
+  #ImgHerbs {
+    height: 100%;
+    width: 100%;
+  }
+
+
+  .ImgPreis {
+    height: 40vh;
+    width: 50%;
+    /* transform: translate(0px, 50%); */
+  }
+
+  #ImgPlant {
+    height: 100%;
+    width: 100%;
+  }
+  
+  #TextPreis1 {
+    font-size: 28pt;
+    text-align: center;
+    margin: 25px 25px 25px 25px;
+    font-family: 'Gabriola';
+  }
+  
+  #TextPreis2 {
+    font-size: 24pt;
+    text-align: center;
+    margin: 25px 25px 25px 25px;
+    font-family: 'Gabriola';
+  }
+  
+  #TextPreis3 {
+    font-size: 18pt;
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+    font-family: 'Gabriola';
+  }
+  
+  hr {
+    height: 1px;
+    background-color: black;
+  }
+
+
+  #Phase4 {
+    height: 70vh;
+    display: flex;
+  }
+
+#googleMap {
+  height: 100%;
+  width: 50%;
+  border: 0;
+}
+
+#FormTitel {
+  font-size: 24pt;
+    text-align: center;
+    position: relative;
+    background-color: #bfe2ca;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman';
+    float: top;
+}
+
+.formular {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+  
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    overflow: auto;
+    display: none;
+    padding: 0 20px;
+    z-index: 1000;
+  }
+    
+  .modal-inner {
+    background-color: #fff;
+    border-radius: 3px;
+    width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+  /* Placed on the body while a modal is open to prevent scrolling. */
+  .showing-modal {
+    overflow: hidden;
+    position: fixed;
+  }
+  
+  /* So the scrollbar calculation is correct. */
+  body {
+    margin: 0;
+  }
+  
+  
+/* -------------Button----------------- */
+
+.AnmeldeButton {
+  position: fixed;
+  right: 25px;
+  margin: 25px 25px 25px 25px;
+  z-index: 100;
+  background-color: #bfe2ca;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: whitesmoke;
+}
+
+.AnmeldeButton:hover {
+  background-color:  #7de7b8;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 35px;
+  padding: 20px;
+  width: 400px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  z-index: 6;
+  font-family: 'Gabriola';
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media only screen and (max-width: 450px) {
+  .AnmeldeButton {
+    right: 0;
+    margin: 5px;
+}
+
+.button {
+  font-size: 18px;
+  padding: 0px;
+  width: 171px;
+}
+
+#Phase1 {
+  height: 23vh;
+  background-size: cover;
+}
+
+#Phase1 p {
+  font-size: 19pt;
+  top: 50%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#Phase2 {
+  height: 50vh;
+}
+
+.AllSquares {
+
+  width: 90%;
+  transform: translate(0, 34%);
+
+}
+
+h1 {
+  font-size: 18pt;
+  font-family: 'Gabriola';
+  text-align: center;
+  transform: translate(0, -16%);
+  border-radius: 50px;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 0px;
+}
+
+.TextBox {
+  height: 25vh;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#TextPreis1 {
+  font-size: 16pt;
+  text-align: center;
+  font-family: 'Gabriola';
+  line-height: 1;
+  margin: 10px;
+}
+
+#infoVN, #infoGW, #infoAVS {
+  position: absolute;
+  bottom: -13px;
+  font-family: 'Gabriola';
+  font-size: 13pt;
+}
+
+#infoVN::before, #infoGW::before, #infoAVS::before {
+  height: 0px;
+}
+
+.Food {
+  height: 25vh;
+  width: 50%;
+}
+
+.Water {
+  height: 25vh;
+  width: 50%;
+}
+
+#TextPreis2 {
+  font-size: 15pt;
+  text-align: center;
+  font-family: 'Gabriola';
+  line-height: 1; 
+  margin: 0px;
+}
+
+.Herbs {
+  height: 25vh;
+  width: 50%;
+}
+
+.ImgPreis {
+  height: 25vh;
+  width: 50%;
+  transform: translate(50%);
+  margin-top: 51px;
+}
+
+.TextBoxLast {
+  height: 40vh;
+  width: 100%;
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transform: translate(0,100%);
+}
+
+#TextPreis3 {
+
+  font-size: 14pt;
+  text-align: center;
+  font-family: 'Gabriola';
+
+}
+}

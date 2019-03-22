@@ -1,0 +1,171 @@
+#ModalPhase1 h1 {
+  font-size: 40pt;
+  text-align: center;
+  position: relative;
+  transform: translate(0px, -50%);
+  top: 50%;
+  margin-left: 24%;
+  margin-right: 24%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+  font-family: 'Gabriola';
+}
+
+#ModalPhase1 h5 {
+  font-size: 19pt;
+  font-family: 'Gabriola';
+}
+
+  
+  #ModalPhase1 {
+    height: 30vh;
+    background-image: url('../../assets/ModalImg1.PNG');
+  }
+  
+  #ModalPhase2 {
+    height: 30vh;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+    background-color: rgb(228, 228, 228);
+  }
+  
+  #ModalPhase3 {
+    height: 40vh;
+    background-color: #bfe2ca;
+  }
+
+  .Preis {
+    height: 40vh;
+    width: 30%;
+    transform: translate(0px, 50%);
+    background-color: white;
+    padding: 70px 20px 20px 20px;
+  }
+  
+  .ImgPreis {
+    height: 40vh;
+    width: 30%;
+    transform: translate(0px, 50%);
+  }
+
+  #ImgPlant {
+    height: 100%;
+    width: 100%;
+  }
+  
+  #TextPreis1 {
+    font-size: 15pt;
+    text-align: center;
+  }
+  
+  #TextPreis2 {
+    font-size: 20pt;
+    text-align: center;
+  }
+  
+  #TextPreis3 {
+    font-size: 15pt;
+    text-align: center;
+  }
+  
+  hr {
+    height: 1px;
+    background-color: black;
+  }
+
+
+  #ModalPhase4 {
+    height: 70vh;
+    display: flex;
+  }
+
+#googleMap {
+  height: 100%;
+  width: 50%;
+  border: 0;
+}
+
+#FormTitel {
+  font-size: 24pt;
+    text-align: center;
+    position: relative;
+    background-color: #bfe2ca;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman';
+    float: top;
+}
+
+.formular {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+  
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    overflow: auto;
+    display: none;
+    padding: 0 20px;
+    z-index: 1000;
+  }
+    
+  .modal-inner {
+    background-color: #fff;
+    border-radius: 3px;
+    width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+  /* Placed on the body while a modal is open to prevent scrolling. */
+  .showing-modal {
+    overflow: hidden;
+    position: fixed;
+  }
+  
+  /* So the scrollbar calculation is correct. */
+  body {
+    margin: 0;
+  }
+  
+  
+ /* footer */
+
+
+#kontakt:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#impressum {
+  color: white;
+}
+
+#impressum:hover {
+  text-decoration: none;
+}
+
+#quellen {
+  color: white;
+}
+
+#quellen:hover {
+  text-decoration: none;
+}
+
+.page-footer img {
+  position: absolute;
+  transform: translate(-250px, 20%);
+}
+   

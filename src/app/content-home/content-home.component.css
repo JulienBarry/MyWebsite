@@ -1,0 +1,367 @@
+
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ html, body {
+   height: 100%;
+   max-width: 100%;
+   overflow-x: hidden;
+ }
+ 
+/*  scroll down arrows */
+
+ .arrow{
+  position: absolute;
+  top: 93%;
+  left: 50%;
+  transform: translate(-50%,-93%);
+}
+.arrow span{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid rgb(255, 255, 255);
+  border-right: 5px solid rgb(255, 255, 255);
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+  animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+  animation-delay: -0.4s;
+}
+@keyframes animate {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
+}
+
+/*  scroll down arrows end */
+
+ #Phase1 {
+   height: 100vh;
+   
+ }
+
+
+ .Home {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.HomeScrolled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.TitelP1 {
+  font-size: 4vw;
+}
+
+h5 {
+  font-size: 2vw;
+}
+
+.TextP1 {
+  position: relative;
+  transform: translate(0px, -50%);
+  top: 50%;
+  margin-left: 35%;
+  margin-right: 35%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+}
+
+
+#slideshow {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width:100%;
+  height:100%;
+  display: inline-block;
+}
+.elemnt,.elemnt1,.elemnt2 {
+position: absolute;
+left: 0;
+width: 100%;
+background-size: cover;
+height: 100%;
+display: inline-block;
+text-align: center;
+font-family: 'Gabriola';
+}
+
+.elemnt {
+  animation: xfade 12s 8s infinite;
+  background-image: url('../../assets/background3Home.jpg');
+}
+.elemnt1 {
+  animation: xfade 12s 4s infinite;
+  background-image: url('../../assets/background2Home.jpg');
+}
+.elemnt2 {
+  animation: xfade 12s 0s infinite;
+  background-image: url('../../assets/background1Home.jpg');
+  
+}
+
+@keyframes xfade{
+  0% { opacity:0; } 
+12.5% { opacity:1; } 
+35.3% { opacity:1; } 
+50% { opacity:0; } 
+100% { opacity:0; }
+ }  
+
+#Phase2 {
+  background-image: url('../../assets/full-bloom.png');
+  height: 70vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ImgBox {
+  position: absolute;
+  height: 50%;
+  max-width: auto;
+  left: 20%;
+}
+
+#ImgPetra {
+  height: 100%;
+  width: auto;
+  border-radius: 100px;
+}
+
+.title {
+  background-color: rgb(164, 236, 164);
+  border-radius: 50px;
+  font-size: 2.5vw;
+  width: 21vw;
+  font-family: 'Gabriola';
+  padding: 10px;
+  -webkit-transform: translate(-20%,31%);
+  transform: translate(-30%, -170%);
+  position: absolute;
+  z-index: 1;
+}
+
+.Einleitung {
+  text-align: center;
+  font-size: 20pt;
+  width: 22%;
+  -webkit-transform: translate(40%, 30%);
+  transform: translate(40%, 32%);
+  font-family: 'Gabriola';
+  background-color: rgba(164, 236, 164, 0.5);
+  border-radius: 20px;
+  padding: 10px;
+  position: absolute;
+}
+
+ #Phase4 {
+  height: 50vh;
+  position: relative;
+  background-color: rgb(164, 236, 164);
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+#Phase4:hover {
+  background-color: rgb(30, 172, 157);
+}
+
+#TextP4 {
+  font-size: 32pt;
+  text-align: center;
+  position: relative;
+  transform: translate(0px, -50%);
+  top: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+  font-family: 'Gabriola';
+}
+
+
+@media (max-height: 500px) and (min-width: 500px) and (max-width: 900px) {
+  .TitelP1 {
+    font-size: 6vw;
+  }
+
+
+  .TextP1 {
+    margin-left: 25%;
+    margin-right: 25%;
+    top: 30%;
+  }
+
+  #Phase2 {
+    
+  }
+  
+  #ImgBox {
+    position: absolute;
+    height: 50%;
+    max-width: auto;
+    transform: translate(0,0);
+    top: 30%;
+    left: 10%;
+}
+  
+  #ImgPetra {
+    
+  }
+ 
+  .title {
+    position: absolute;
+    background-color: #a4eca4;
+    border-radius: 50px;
+    font-size: 4vw;
+    width: 35%;
+    font-family: 'Gabriola';
+    padding: 10px;
+    transform: translate(0%,0%);
+    z-index: 1;
+    top: 20px;
+}
+  
+  .Einleitung {
+    text-align: center;
+    font-size: 12pt;
+    width: 42%;
+    right: 60px;
+    transform: translate(0, 0);
+    bottom: 12px;
+    font-family: 'Gabriola';
+    background-color: rgb(164, 236, 164);
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+}
+
+#TextP4 {
+  font-size: 20pt;
+  padding: 5px;
+  font-family: 'Gabriola';
+}
+}
+
+@media (max-width: 500px) {
+  .TitelP1 {
+    font-size: 12vw;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+  }
+
+
+  .TextP1 {
+    position: relative;
+    transform: translate(0px, -40%);
+    top: 40%;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  #Phase2 {
+    background-image: url('../../assets/full-bloom.png');
+    height: 70vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #ImgBox {
+    position: absolute;
+    height: 35%;
+    max-width: auto;
+    transform: translate(0,0);
+    top: 20%;
+}
+  
+  #ImgPetra {
+    height: 100%;
+    width: auto;
+    border-radius: 100px;
+  }
+ 
+  .title {
+    position: absolute;
+    background-color: #a4eca4;
+    border-radius: 50px;
+    font-size: 8vw;
+    width: 71%;
+    font-family: 'Gabriola';
+    padding: 10px;
+    transform: translate(0%,0%);
+    z-index: 1;
+    top: 20px;
+}
+  
+  .Einleitung {
+    text-align: center;
+    font-size: 13pt;
+    width: 70%;
+    transform: translate(0, 0);
+    bottom: 15px;
+    font-family: 'Gabriola';
+    background-color: rgb(164, 236, 164);
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+}
+
+#TextP4 {
+  font-size: 20pt;
+  text-align: center;
+  position: relative;
+  -webkit-transform: translate(0px, -50%);
+  transform: translate(0px, -50%);
+  top: 50%;
+  margin-left: 6%;
+  margin-right: 4%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+  font-family: 'Gabriola';
+  padding: 5px;
+}
+
+}

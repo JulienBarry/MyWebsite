@@ -1,0 +1,10 @@
+@import url(https://db.onlinewebfonts.com/c/b26b20369adfef2b3d65d266e0625fe2?family=Gabriola);
+
+@font-face {font-family: "Gabriola";
+    src: url("https://db.onlinewebfonts.com/t/b26b20369adfef2b3d65d266e0625fe2.eot");
+    src: url("https://db.onlinewebfonts.com/t/b26b20369adfef2b3d65d266e0625fe2.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/b26b20369adfef2b3d65d266e0625fe2.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/b26b20369adfef2b3d65d266e0625fe2.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/b26b20369adfef2b3d65d266e0625fe2.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/b26b20369adfef2b3d65d266e0625fe2.svg#Gabriola") format("svg");
+}
