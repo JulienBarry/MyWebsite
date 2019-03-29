@@ -3,3 +3,9 @@
     padding: 50px;
     width: 60%;
 }
+
+@media only screen and (min-height: 500px) and (max-width: 450px) {
+    .impressum {
+        width: 100%;
+        }
+}

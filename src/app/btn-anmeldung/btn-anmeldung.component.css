@@ -62,6 +62,20 @@
     .AnmeldeButton {
       right: 0;
       margin: 5px;
+      top: 70px;
+  }
+
+  .button {
+    font-size: 18px;
+    padding: 0px;
+    width: 171px;
+}
+  }
+
+  @media (max-height: 500px) and (min-width: 500px) and (max-width: 900px) {
+    .AnmeldeButton {
+      right: 0;
+      margin: 5px;
   }
 
   .button {

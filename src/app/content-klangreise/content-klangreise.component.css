@@ -190,3 +190,29 @@
 }
 
 }
+
+
+
+@media (max-height: 500px) and (min-width: 500px) and (max-width: 900px) {
+
+  #Phase1 p   {
+      font-size: 20pt;
+    }
+
+  .TextP2   {
+      font-size: 10pt;
+    }
+    #Phase1   {
+      background-size: cover;
+    }
+    #Phase3 p   {
+      font-size: 21pt;
+      width: 80%;
+      margin-bottom: 0;
+    }
+    .arrow   {
+      display: none;
+    }
+
+
+}

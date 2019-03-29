@@ -508,3 +508,85 @@
     }
 
 
+
+    @media (max-height: 500px) and (min-width: 500px) and (max-width: 900px) {
+
+    #Phase3 p {
+        font-size: 10pt;
+        margin-left: 14%;
+        margin-right: 14%;
+      }
+      .TextP2 {
+        font-size: 16pt;
+      }
+
+      #Phase1 {
+          height: 37vh;
+          background-size: cover;
+        }
+
+      .arrow {
+          top: 90%;
+          transform: translate(-50%,-94%);
+        }
+        
+      .arrow span {
+          width: 15px;
+          height: 15px;
+          margin: 30px;
+        }  
+
+      #Phase1 p {
+          font-size: 20pt;
+          margin-left: 25%;
+          margin-right: 25%;
+      }
+      #Phase3 {
+        height: 240vh;
+      }
+      .QList {
+        width: 570px;
+      }
+      .QList a {
+        font-size: 21px;
+      }
+      .QList ul li {
+        padding-top: 10px;
+        height: 50px;
+        z-index: 0;
+      }
+      #Phase4 {
+        height: 140vh;
+        background-size: cover;
+        top: 115px;
+        z-index: 0;
+      }
+      .Phase4Titel {
+        height: 15vh;
+        font-size: 19pt;
+        z-index: 1;
+      }
+      .AList {
+        width: 275px;
+      }
+      .AList ul li {
+        padding-top: 10px;
+        height: 52px;
+      }
+      .AList a {
+        font-size: 21px;
+      }
+      #Phase5 {
+        height: 130vh;
+        background-size: cover;
+      }
+      .Phase5Titel {
+        height: 15vh;
+        font-size: 19pt;
+      }
+      #TextP6 {
+        font-size: 19pt;
+        padding: 10px;
+      }
+
+    }

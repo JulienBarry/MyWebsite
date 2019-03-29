@@ -317,3 +317,44 @@ border-radius: 50px;
   }
 
 
+
+  @media (max-height: 500px) and (min-width: 500px) and (max-width: 900px) {
+
+  .TextP2 {
+      font-size: 9pt;
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 0;
+    }
+    #Phase4 p {
+      width: 70%;
+      font-size: 13pt;
+    }
+    #Phase3 p {
+      font-size: 19pt;
+      width: 55%;
+      margin-bottom: 0;
+    }
+    #TextP5 {
+      font-size: 15pt;
+    }
+    #Phase1 p {
+      font-size: 20pt;
+    }
+    #ImgBox1 {
+      top: 27px;
+    }
+    #Phase2 {
+      height: 65vh;
+    }
+    #Phase1 {
+      height: 35vh;
+    }
+    .arrow {
+      display: none;
+    }
+    #Phase4 {
+      height: 55vh;
+    }
+
+  }

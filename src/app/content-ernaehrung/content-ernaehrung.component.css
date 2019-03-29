@@ -311,6 +311,7 @@ h1 {
   .AnmeldeButton {
     right: 0;
     margin: 5px;
+    top: 65px;
 }
 
 .button {
@@ -414,6 +415,137 @@ h1 {
 
 .TextBoxLast {
   height: 40vh;
+  width: 100%;
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transform: translate(0,100%);
+}
+
+#TextPreis3 {
+
+  font-size: 14pt;
+  text-align: center;
+  font-family: 'Gabriola';
+
+}
+}
+
+@media (max-height: 500px) and (min-width: 500px) and (max-width: 900px) {
+  .AnmeldeButton {
+    right: 0;
+    margin: 5px;
+    top: 65px;
+}
+
+.button {
+  font-size: 18px;
+  padding: 0px;
+  width: 171px;
+}
+
+#Phase1 {
+  height: 23vh;
+  background-size: cover;
+}
+
+#Phase1 p {
+  font-size: 18pt;
+  top: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#Phase2 {
+  height: 50vh;
+}
+
+#Phase3 {
+  height: 280vh;
+}
+
+.AllSquares {
+
+  width: 55%;
+  transform: translate(0, 34%);
+
+}
+
+h1 {
+  font-size: 13pt;
+  font-family: 'Gabriola';
+  text-align: center;
+  transform: translate(0, -6%);
+  border-radius: 50px;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 0px;
+}
+
+.TextBox {
+  height: 35vh;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#TextPreis1 {
+  font-size: 16pt;
+  text-align: center;
+  font-family: 'Gabriola';
+  line-height: 1;
+  margin: 10px;
+}
+
+#infoVN, #infoGW, #infoAVS {
+  position: absolute;
+  bottom: -13px;
+  font-family: 'Gabriola';
+  font-size: 13pt;
+}
+
+#infoVN::before, #infoGW::before, #infoAVS::before {
+  height: 0px;
+}
+
+.Food {
+  height: 35vh;
+  width: 50%;
+}
+
+.Water {
+  height: 35vh;
+  width: 50%;
+}
+
+#TextPreis2 {
+  font-size: 15pt;
+  text-align: center;
+  font-family: 'Gabriola';
+  line-height: 1; 
+  margin: 0px;
+}
+
+.Herbs {
+  height: 35vh;
+  width: 50%;
+}
+
+.ImgPreis {
+  height: 35vh;
+  width: 50%;
+  transform: translate(50%);
+  margin-top: 51px;
+}
+
+.TextBoxLast {
+  height: 70vh;
   width: 100%;
   background-color: white;
   padding: 15px;

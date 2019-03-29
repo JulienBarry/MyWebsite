@@ -169,3 +169,26 @@
   transform: translate(-250px, 20%);
 }
    
+
+@media only screen and (max-width: 450px) {
+  .modal-inner {
+    -webkit-transform: scale(.4);
+    -moz-transform: scale(.4);
+    transform: scale(.4);
+
+    /* // or zoom: 50% */
+  }
+
+ #ModalPhase4 {
+    height: 85vh;
+  }
+  
+  .Preis {
+    padding: 20px;
+  }
+  .page-footer img {
+    display: none;
+  }
+
+
+}

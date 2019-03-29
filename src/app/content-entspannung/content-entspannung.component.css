@@ -68,11 +68,7 @@
   width: 100%;
 } 
 
-
-
-
 .Phase3Titel {
-    position: relative;
    height: 10vh;
     position: -webkit-sticky;
       position: sticky;
@@ -289,3 +285,47 @@
 }
 
   }
+
+
+
+  @media (max-height: 500px) and (min-width: 500px) and (max-width: 900px) {
+
+    #Phase2 p {
+        font-size: 9pt;
+        width: 90%;
+      }
+      #Phase1 p {
+        font-size: 16pt;
+        margin-left: 30%;
+        margin-right: 30%;
+      }
+      #Phase1 {
+        background-size: cover;
+      }
+      .List {
+        width: 515px;
+      }
+      #Phase3 {
+        height: 167vh;
+        z-index: 30;
+        position: relative;
+        top: auto;
+      }
+      .Phase3Titel {
+        height: 15vh;
+        z-index: 2;
+        position: relative;
+        top: auto;
+      }
+      .List ul li {
+        padding-top: 10px;
+        height: 50px;
+      }
+      .List a {
+        font-size: 21px;
+      }
+      .arrow {
+        display: none;
+      }
+
+    }
