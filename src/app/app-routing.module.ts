@@ -13,14 +13,14 @@ import { ImpressumComponent } from './impressum/impressum.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent},
-  { path: 'inspiration', component: InspirationComponent},
-  { path: 'persoenliches', component: PersoenlichesComponent},
-  { path: 'gespraeche', component: GespraecheComponent},
-  { path: 'entspannung', component: EntspannungComponent},
-  { path: 'klangreise', component: KlangreiseComponent},
-  { path: 'ernaehrung', component: ErnaehrungComponent},
-  { path: 'impressum', component: ImpressumComponent}
+  { path: 'home', component: HomeComponent, pathMatch: 'full'},
+  { path: 'inspiration', component: InspirationComponent, pathMatch: 'full'},
+  { path: 'persoenliches', component: PersoenlichesComponent, pathMatch: 'full'},
+  { path: 'gespraeche', component: GespraecheComponent, pathMatch: 'full'},
+  { path: 'entspannung', component: EntspannungComponent, pathMatch: 'full'},
+  { path: 'klangreise', component: KlangreiseComponent, pathMatch: 'full'},
+  { path: 'ernaehrung', component: ErnaehrungComponent, pathMatch: 'full'},
+  { path: 'impressum', component: ImpressumComponent, pathMatch: 'full'}
 ];
 
 @NgModule({

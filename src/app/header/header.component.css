@@ -4,11 +4,16 @@ a:hover {
 }
 
 a {
-    font-family: 'Gabriola';    
+    font-family: 'Gabriola';   
+    font-size: 20pt !important; 
 }
 
 #dropdown1 {
     top: -64px;
+}
+
+#dropdown1 a {
+    font-size: 14pt !important;
 }
 
 #dropdown1 a:hover {

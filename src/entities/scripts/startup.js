@@ -1,19 +1,101 @@
 
 
-$(window).load(function () {
+//https://formvalidation.io/guide/plugins/materialize/
+
+
+
+$(window).load(function() {
+
+  $(function(){ 
+    setTimeout(function () {
+      $('.se-pre-con').fadeOut('slow', function () {
+        $(this).remove();
+      });
+    }, 1500);  
+  });  
+
+ /* -------------- */
+
+    //update this with your js_form selector
+    var form_id_js = "javascript_form";
+
+    var data_js = {
+        "access_token": "aw1njefkbx5akez4bjugpxsr" // sent after you sign up
+    };
+
+    function js_onSuccess() {
+        // remove this to avoid redirect
+        window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+    }
+
+    function js_onError(error) {
+        // remove this to avoid redirect
+        window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+    }
+
+    var sendButton = document.getElementById("js_send");
+
+    function js_send() {
+        sendButton.disabled=true;
+        var request = new XMLHttpRequest();
+        request.onreadystatechange = function() {
+            if (request.readyState == 4 && request.status == 200) {
+                js_onSuccess();
+            } else
+            if(request.readyState == 4) {
+                js_onError(request.response);
+            }
+        };
+
+        var subject = document.querySelector("#" + form_id_js + " [name='subject']").value;
+        var message = document.querySelector("#" + form_id_js + " [name='text']").value;
+        var lastname = document.querySelector("#" + form_id_js + " [name='last_name']").value;
+        var firstname = document.querySelector("#" + form_id_js + " [name='first_name']").value;
+        var email = document.querySelector("#" + form_id_js + " [name='email']").value;
+
+        data_js['subject'] = "Anmeldung: "+subject;
+        data_js['text'] = "E-Mail von: "+firstname+" "+lastname+" ("+email+") \n \n"+message;
+        var params = toParams(data_js);
+
+        request.open("POST", "https://postmail.invotes.com/send", true);
+        request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+        request.send(params);
+
+        return false;
+    }
+
+    sendButton.onclick = js_send;
+
+    function toParams(data_js) {
+        var form_data = [];
+        for ( var key in data_js ) {
+            form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key]));
+        }
+
+        return form_data.join("&");
+    }
+
+    var js_form = document.getElementById(form_id_js);
+    js_form.addEventListener("submit", function (e) {
+        e.preventDefault();
+    });
+
+/* -------------- */
+
+
+  $(document).ready(function(){
+    $('.dropdown-content').dropdown();
+  });
 
   $(document).ready(function(){
     $('.sidenav').sidenav();
-  })
+  });
 
   $('nav a').css("font-family", "Gabriola");
   $('nav a').css("font-size", "20pt");
 
-  setTimeout(function () {
-    $('.se-pre-con').fadeOut('slow', function () {
-    });
-  }, 1500);  
-  
+
   $('textarea').keyup(function () {
     var length = $(this).val().length;
 
@@ -167,8 +249,8 @@ $(window).load(function () {
       $('nav a').css("color", "black");
       $('#PhaseX').css("background-image", "url('../../assets/ImgGespraechePAngebote.jpg')");
       var aud = document.getElementById("schritte");
-      aud.volume = 0.005;
-      $('#FormDropdown').val('1');
+      aud.volume = 0.01;
+      $('#FormDropdown').val('Gespräche in der Natur');
     }
 
     if (pathname == '/entspannung') {
@@ -191,7 +273,7 @@ $(window).load(function () {
       }, function () {
         $(this).css("background-color", "#d1d2c2");
       });
-      $('#FormDropdown').val('2');
+      $('#FormDropdown').val('Entspannung durch Klangmassage');
     }
 
     if (pathname == '/klangreise') {
@@ -204,14 +286,14 @@ $(window).load(function () {
       }, function () {
         $(this).css("background-color", "#8bacbd");
       });
-      $('#FormDropdown').val('3');
+      $('#FormDropdown').val('Klangreise');
     }
 
     if (pathname == '/ernaehrung') {
       $('nav').css("background-color", "#bfe2ca");
       $('nav a').css("color", "black");
       $('#PhaseX').css("background-image", "url('../../assets/ErnaehrungImgP4.jpg')");
-      $('#FormDropdown').val('4');
+      $('#FormDropdown').val('vitalstoffreiche Ernährung - gesundes Wasser');
     }
 
     $(window).scroll(function () {
@@ -233,6 +315,16 @@ $(window).load(function () {
       }
     });
 
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 100) {
+        $('.arrow').addClass('arrowNone');
+        $('.arrow').removeClass('arrow');
+      } else if ($(window).scrollTop() <= 90) {
+        $('.arrowNone').addClass('arrow');
+        $('.arrow').removeClass('arrowNone');
+      }
+    });
+
   });
 
   $(function() {
@@ -243,22 +335,9 @@ $(window).load(function () {
           hover: true, // Activate on hover
           belowOrigin: true, // Displays dropdown below the button
           alignment: 'right' // Displays dropdown with edge aligned to the left of button
-        }
-      );
-    
         });
+     });
 
 })(jQuery);
 
 
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 100) {
-    $('.arrow').addClass('arrowNone');
-    $('.arrow').removeClass('arrow');
-  } else if ($(window).scrollTop() <= 90) {
-    $('.arrowNone').addClass('arrow');
-    $('.arrow').removeClass('arrowNone');
-  }
-});
-
-  
