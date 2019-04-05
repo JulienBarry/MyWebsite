@@ -1,5 +1,5 @@
 #ModalPhase1 p {
-  font-size: 28pt;
+  font-size: 2vw;
   text-align: center;
   position: relative;
   transform: translate(0px, -50%);
@@ -32,6 +32,7 @@
   height: 100%;
   width: 45%;
   background-image: url('../../assets/ModalVNImg2.PNG');
+  background-size: cover;
 }
 
 #ModalText {
@@ -41,9 +42,29 @@
   align-items: center;
   justify-content: center;
 }
-
+/* #ModalText[_ngcontent-c5] p[_ngcontent-c5] {
+  - font-size: 16pt;
+  + font-size: 1.1vw;
+  }
+  #ModalPhase1[_ngcontent-c5] p[_ngcontent-c5] {
+  - font-size: 28pt;
+  + font-size: 2vw;
+  }
+  #ModalPhase4[_ngcontent-c5] p[_ngcontent-c5] {
+  - font-size: 35pt;
+  + font-size: 2.5vw;
+  }
+  #ModalPhase5[_ngcontent-c5] p[_ngcontent-c5] {
+  - font-size: 19pt;
+  + font-size: 1.3vw;
+  }
+  .modal-inner[_ngcontent-c5] {
+  - width: 1200px;
+  - padding: 20px;
+  + width: 63vw;
+  } */
 #ModalText p {
-  font-size: 16pt;
+  font-size: 1.1vw;
   width: 85%;
   font-family: 'Gabriola';
   border-radius: 20px;
@@ -63,7 +84,7 @@
   padding: 20px 20px 20px 20px;
   margin-left: 20%;
   margin-right: 20%;
-  font-size: 35pt;
+  font-size: 2.5vw;
   background-color: #bfe2ca;
   font-family: 'Gabriola';
   border-radius: 50px;
@@ -79,7 +100,7 @@
 }
 
 #ModalPhase5 p {
-  font-size: 19pt;
+  font-size: 1.3vw;
   width: 45%;
   font-family: 'Gabriola';
   border-radius: 20px;
@@ -104,7 +125,7 @@
 .modal-inner {
   background-color: #fff;
   border-radius: 3px;
-  width: 1200px;
+  width: 63vw;
   margin: 50px auto;
   padding: 20px;
 }

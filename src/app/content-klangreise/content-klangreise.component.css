@@ -9,7 +9,7 @@
 
 #Phase1 p{
 
-  font-size: 28pt;
+  font-size: 2vw;
   text-align: center;
   position: relative;
   transform: translate(0px, -50%);
@@ -64,7 +64,7 @@
 
 .TextP2 {
   text-align: center;
-  font-size: 22pt;
+  font-size: 1.5vw;
   width: 80%;
   font-family: 'Gabriola';
   border-radius: 20px;
@@ -86,7 +86,7 @@
 
 #Phase3 p {
   padding: 20px 20px 20px 20px;
-  font-size: 35pt;
+  font-size: 2.5vw;
   color: rgb(0, 0, 0);
   font-family: 'Gabriola';
   border-radius: 50px;
@@ -102,14 +102,14 @@
 
 .arrow{
     position: absolute;
-    top: 85%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%,-93%);
   }
   .arrow span{
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 1.5vw;
+    height: 1.5vw;
     border-bottom: 5px solid rgb(0, 0, 0);
     border-right: 5px solid rgb(0, 0, 0);
     transform: rotate(45deg);

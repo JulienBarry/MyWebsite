@@ -24,7 +24,7 @@
 
 #Phase1 p{
 
-  font-size: 28pt;
+  font-size: 1.7vw;
   text-align: center;
   position: relative;
   transform: translate(0px, -50%);
@@ -70,7 +70,7 @@ z-index: 0;
 }
 
 .TextP2 {
-  font-size: 19pt;
+  font-size: 1.2vw;
   width: 70%;
   font-family: 'Gabriola';
   border-radius: 20px;
@@ -92,7 +92,7 @@ z-index: 0;
 
 #Phase3 p {
   padding: 20px 20px 20px 20px;
-  font-size: 35pt;
+  font-size: 2.5vw;
   color: rgb(0, 0, 0);
   font-family: 'Gabriola';
   text-align: center;
@@ -123,8 +123,8 @@ z-index: 2;
  */
 #Phase4 p {
 padding: 20px 20px 20px 20px;
-width: 45%;
-font-size: 24pt;
+width: 50%;
+font-size: 1.4vw;
 font-family: 'Gabriola';
 color: rgb(0, 0, 0);
 background-color: #d0e6e3;
@@ -146,7 +146,7 @@ border-radius: 50px;
 }
 
 #TextP5 {
-  font-size: 28pt;
+  font-size: 2vw;
   text-align: center;
   position: relative;
   width: 45%;
@@ -163,14 +163,14 @@ border-radius: 50px;
 
 .arrow{
     position: absolute;
-    top: 85%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%,-93%);
   }
   .arrow span{
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 1.5vw;
+    height: 1.5vw;
     border-bottom: 5px solid rgb(0, 0, 0);
     border-right: 5px solid rgb(0, 0, 0);
     transform: rotate(45deg);

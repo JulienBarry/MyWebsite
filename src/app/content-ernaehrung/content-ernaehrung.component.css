@@ -1,5 +1,5 @@
 #Phase1 p{
-    font-size: 32pt;
+    font-size: 2.3vw;
     text-align: center;
     position: relative;
     transform: translate(0px, -50%);
@@ -20,7 +20,7 @@
   }
   
 h1 {
-  font-size: 23pt;
+  font-size: 1.6vw;
   font-family: 'Gabriola';
   text-align: center;
   transform: translate(0, -50%);
@@ -28,7 +28,7 @@ h1 {
     border-radius: 50px;
   margin-left: 14%;
   margin-right: 14%;
-  padding: 20px 20px 20px 20px;
+  padding: 15px;
 
 }
 
@@ -42,7 +42,7 @@ h1 {
   }
   
   #Phase3 {
-    height: 160vh;
+    height: 180vh;
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -159,21 +159,21 @@ h1 {
   }
   
   #TextPreis1 {
-    font-size: 28pt;
+    font-size: 1.8vw;
     text-align: center;
     margin: 25px 25px 25px 25px;
     font-family: 'Gabriola';
   }
   
   #TextPreis2 {
-    font-size: 24pt;
+    font-size: 1.4vw;
     text-align: center;
     margin: 25px 25px 25px 25px;
     font-family: 'Gabriola';
   }
   
   #TextPreis3 {
-    font-size: 18pt;
+    font-size: 1.15vw;
     text-align: center;
     margin: 20px 20px 20px 20px;
     font-family: 'Gabriola';

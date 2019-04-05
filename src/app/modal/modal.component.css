@@ -1,5 +1,5 @@
 #ModalPhase1 h1 {
-  font-size: 40pt;
+  font-size: 2.5vw;
   text-align: center;
   position: relative;
   transform: translate(0px, -50%);
@@ -12,8 +12,9 @@
   font-family: 'Gabriola';
 }
 
+
 #ModalPhase1 h5 {
-  font-size: 19pt;
+  font-size: 1.3vw;
   font-family: 'Gabriola';
 }
 
@@ -56,17 +57,17 @@
   }
   
   #TextPreis1 {
-    font-size: 15pt;
+    font-size: 1.2vw;
     text-align: center;
   }
   
   #TextPreis2 {
-    font-size: 20pt;
+    font-size: 1.5vw;
     text-align: center;
   }
   
   #TextPreis3 {
-    font-size: 15pt;
+    font-size: 1vw;
     text-align: center;
   }
   
@@ -123,7 +124,7 @@
   .modal-inner {
     background-color: #fff;
     border-radius: 3px;
-    width: 1200px;
+    width: 63vw;
     margin: 50px auto;
     padding: 20px;
   }

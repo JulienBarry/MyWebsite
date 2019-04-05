@@ -5,12 +5,13 @@
     top: 64px;
     height: 40vh;
     background-image: url('../../assets/EntspannungImg1.jpg');
+    background-size: cover;
     z-index: -3;
 }
 
 #Phase1 p{
 
-  font-size: 28pt;
+  font-size: 2vw;
   text-align: center;
   position: relative;
   transform: translate(0px, -50%);
@@ -30,19 +31,19 @@
   position: sticky;
   top: 0;
   height: 53.5vh;
-  z-index: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: -1;
 }
 
 
 #Phase2 p {
   padding: 20px 20px 20px 20px;
-  font-size: 20pt;
+  font-size: 1.2vw;
   color: rgb(0, 0, 0);
   border-radius: 50px;
-  width: 75%;
+  width: 80%;
   height: auto;
   font-family: 'Gabriola';
 }
@@ -69,10 +70,8 @@
 } 
 
 .Phase3Titel {
-   height: 10vh;
-    position: -webkit-sticky;
-      position: sticky;
-      top: 64px;
+   height: 65px;
+   
     display: flex;
       align-items: center;
       justify-content: center;
@@ -82,32 +81,31 @@
       border-top: solid;
   border-bottom: solid;
   border-width: 2px;
+  z-index: 3;
   }
   
   #Phase3 {
     background-image: url('../../assets/full-bloom.png');
-      position: -webkit-sticky;
-      position: sticky;
-      top: 158px;
+     
       display: flex;
       align-items: center;
       justify-content: center;
       height: 80vh;
-      z-index: 1;
+      z-index: 2;
   }
 
 /*  scroll down arrows */
 
 .arrow{
     position: absolute;
-    top: 85%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%,-93%);
   }
   .arrow span{
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 1.5vw;
+    height: 1.5vw;
     border-bottom: 5px solid rgb(0, 0, 0);
     border-right: 5px solid rgb(0, 0, 0);
     transform: rotate(45deg);
@@ -140,7 +138,7 @@
 
 
 .List{
-    width:850px;
+    width: 35%;
     }
     .List ul {
     margin: 0;
@@ -155,14 +153,14 @@
     background-color: #d1d2c2;
     border-radius: 50px;
     padding-left: 58px;
-    padding-top: 20px;
-    height: 70px;
+    padding-top: 10px;
+    height: 7vh;
     
     }
     
     .List a{
     color:rgb(0, 0, 0);
-    font-size:27px;
+    font-size:1.3vw;
     font-family: 'Gabriola';
     }
     
@@ -190,7 +188,7 @@
     transform: rotate(-20deg);
     -ms-transform: rotate(-20deg);
     -webkit-transform: rotate(-20deg);
-    z-index: 698769;
+    z-index: 5;
     overflow: hidden;
     vertical-align: middle;
     content: "\f06c";

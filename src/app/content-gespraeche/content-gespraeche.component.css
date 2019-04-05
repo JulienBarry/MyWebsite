@@ -31,7 +31,7 @@ audio {
 
 #Phase1 p{
 
-  font-size: 28pt;
+  font-size: 1.8vw;
   text-align: center;
   position: relative;
   transform: translate(0px, -50%);
@@ -84,7 +84,7 @@ audio {
 
 .TextP2 {
   text-align: center;
-  font-size: 35pt;
+  font-size: 2.5vw;
   width: 50%;
   font-family: 'Gabriola';
   background-color:  #bfe2ca;
@@ -104,9 +104,9 @@ audio {
   justify-content: center;
 }
 
-#Phase3 p {
+#Phase3 p { 
   padding: 20px 20px 20px 20px;
-  font-size: 19pt;
+  font-size: 1.3vw;
   color: rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 50px;
@@ -139,14 +139,14 @@ audio {
 
 .arrow{
     position: absolute;
-    top: 85%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%,-93%);
   }
   .arrow span{
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 1.5vw;
+    height: 1.5vw;
     border-bottom: 5px solid rgb(0, 0, 0);
     border-right: 5px solid rgb(0, 0, 0);
     transform: rotate(45deg);
