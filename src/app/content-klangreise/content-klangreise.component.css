@@ -4,6 +4,7 @@
     top: 64px;
     height: 35vh;
     background-image: url('../../assets/KlangreiseImg1.jpg');
+    background-size: cover;
     z-index: -3;
 }
 

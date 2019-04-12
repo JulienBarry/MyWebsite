@@ -109,7 +109,7 @@ $(window).load(function() {
   function openModal($Modal) {
 
     var scrollBarWidth = window.innerWidth - document.body.offsetWidth;
-    
+    $('footer .white-text').css("font-size", "20pt !important");
     $('body')
       .css("overflow", "hidden")
       .css('margin-right', scrollBarWidth)
@@ -202,21 +202,7 @@ $(window).load(function() {
       });
   });
 
-  $('#kontakt').click(function (event) {
-    var $Modal = $ModalAnmeldung;
-    closeModal($Modal);
-    $Modal = $ModalKontakt;
-    event.preventDefault();
-    openModal($Modal);
-    $Modal
-      .click(function () {
-        closeModal($Modal);
-      })
-      .find('.modal-inner').click(function (event) {
-        event.stopPropagation();
-      });
   });
-});
 
 
 (function ($) {
@@ -249,7 +235,7 @@ $(window).load(function() {
       $('nav a').css("color", "black");
       $('#PhaseX').css("background-image", "url('../../assets/ImgGespraechePAngebote.jpg')");
       var aud = document.getElementById("schritte");
-      aud.volume = 0.01;
+      aud.volume = 1;
       $('#FormDropdown').val('Gespräche in der Natur');
     }
 

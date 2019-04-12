@@ -1,5 +1,5 @@
 #ModalPhase1 p {
-  font-size: 28pt;
+  font-size: 2vw;
   text-align: center;
   position: relative;
   transform: translate(0px, -50%);
@@ -16,6 +16,7 @@
 #ModalPhase1 {
   height: 30vh;
   background-image: url('../../assets/ModalGWImg1.jpg');
+  background-size: cover;
 }
 
 
@@ -28,7 +29,7 @@
 }
 
 #ModalPhase2 p {
-  font-size: 19pt;
+  font-size: 1.3vw;
   width: 65%;
   font-family: 'Gabriola';
   border-radius: 20px;
@@ -50,7 +51,7 @@
   padding: 20px 20px 20px 20px;
   margin-left: 20%;
   margin-right: 20%;
-  font-size: 35pt;
+  font-size: 2.5vw;
   background-color: #bfe2ca;
   font-family: 'Gabriola';
   border-radius: 50px;
@@ -67,6 +68,7 @@
   height: 100%;
   width: 45%;
   background-image: url('../../assets/ModalGWImg2.jpg');
+  background-size: cover;
 }
 
 #ModalText {
@@ -78,7 +80,7 @@
 }
 
 #ModalText p {
-  font-size: 16pt;
+  font-size: 1.1vw;
   width: 85%;
   font-family: 'Gabriola';
   border-radius: 20px;
@@ -101,7 +103,7 @@
 .modal-inner {
   background-color: #fff;
   border-radius: 3px;
-  width: 1200px;
+  width: 63vw;
   margin: 50px auto;
   padding: 20px;
 }

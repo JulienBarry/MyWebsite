@@ -1,5 +1,5 @@
 #ModalPhase1 p {
-  font-size: 28pt;
+  font-size: 2vw;
   text-align: center;
   position: relative;
   transform: translate(0px, -50%);
@@ -16,6 +16,7 @@
 #ModalPhase1 {
   height: 30vh;
   background-image: url('../../assets/ModalAVSImg1.jpg');
+  background-size: cover;
 }
 
 #ModelPhase2 {
@@ -44,7 +45,7 @@
 }
 
 #ModalText p {
-  font-size: 16pt;
+  font-size: 1.1vw;
   width: 85%;
   font-family: 'Gabriola';
   border-radius: 20px;
@@ -67,7 +68,7 @@
 .modal-inner {
   background-color: #fff;
   border-radius: 3px;
-  width: 1200px;
+  width: 63vw;
   margin: 50px auto;
   padding: 20px;
 }

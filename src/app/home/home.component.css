@@ -10,5 +10,27 @@ if it's not present, don't show loader */
 	width: 100%;
 	height: 100%;
     z-index: 9999;
-	background: url(/assets/Preloader_2.gif) center no-repeat #fff;
+	background: url(../../assets/Preloader_2.gif) center no-repeat #fff;
+}
+
+.maintenance {
+	display: none;
+}
+
+@media (max-width: 1300px) {
+	.se-pre-con {
+		display: none;
+	}
+	
+	.home {
+		display: none;
+	}
+
+	.home-footer {
+		display: none;
+	}
+
+	.maintenance {
+		display: block;
+	}
 }

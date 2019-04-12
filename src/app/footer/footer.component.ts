@@ -12,13 +12,13 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
   }
 
-  onClick() {
+  /* onClick() {
     var el = document.getElementById("contact");
     console.debug(el.id);
     console.debug(el.style.display);
     el.style.display = "block";
     console.debug(el.style.display);
-  }
+  } */
 
 
 }

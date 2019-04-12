@@ -151,7 +151,7 @@ font-family: 'Gabriola';
 
 #ImgBox {
   position: absolute;
-  height: 50%;
+  height: 55%;
   max-width: auto;
   left: 10%;
 }
@@ -165,18 +165,18 @@ font-family: 'Gabriola';
 .title {
   background-color: rgb(164, 236, 164);
   border-radius: 50px;
-  font-size: 2.5em;
+  font-size: 2.8em;
   font-family: 'Gabriola';
   padding: 10px;
-  transform: translate(60%, -170%);
+  transform: translate(60%, -150%);
   position: absolute;
   z-index: 1;
 }
 
 .Einleitung {
   text-align: center;
-  font-size: 1.6em;
-  width: 20em;
+  font-size: 1.8em;
+  width: 23em;
   transform: translate(40%, 32%);
   font-family: 'Gabriola';
   background-color: rgba(164, 236, 164, 0.5);
@@ -215,10 +215,11 @@ font-family: 'Gabriola';
 
 
 @media (max-height: 500px) and (min-width: 500px) and (max-width: 900px) {
+    
+  /* 
   .TitelP1 {
     font-size: 6vw;
   }
-
 
   .TextP1 {
     margin-left: 25%;
@@ -274,7 +275,7 @@ font-family: 'Gabriola';
   font-size: 20pt;
   padding: 5px;
   font-family: 'Gabriola';
-}
+} */
 }
 
 @media (max-width: 500px) {

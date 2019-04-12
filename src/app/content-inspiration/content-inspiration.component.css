@@ -74,7 +74,7 @@
 }
 
 #Phase3 {
-  height: 130vh;
+  height: 200vh;
   background-image: url('../../assets/ImgInspirationP3.jpg');
   padding: 50px 50px 50px 50px;
   z-index: 0;
@@ -86,13 +86,13 @@
 
 #Phase3 p {
   padding: 20px 20px 20px 20px;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   color: rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 50px;
   font-family: 'Gabriola';
-  margin-left: 22%;
-  margin-right: 22%;
+  margin-left: 12%;
+  margin-right: 12%;
 }
 
 
