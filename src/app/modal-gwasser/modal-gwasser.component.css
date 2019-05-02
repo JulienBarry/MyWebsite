@@ -29,8 +29,8 @@
 }
 
 #ModalPhase2 p {
-  font-size: 1.3vw;
-  width: 65%;
+  font-size: 1.5vw;
+  width: 60%;
   font-family: 'Gabriola';
   border-radius: 20px;
   padding: 5px 5px 5px 5px;
@@ -60,7 +60,7 @@
 
 
 #ModalPhase4 {
-  height: 55vh;
+  height: 75vh;
   display: flex;
 }
 
@@ -80,11 +80,11 @@
 }
 
 #ModalText p {
-  font-size: 1.1vw;
+  font-size: 1.4vw;
   width: 85%;
   font-family: 'Gabriola';
   border-radius: 20px;
-  padding: 5px 5px 5px 5px;
+  padding-top: 30px;
 }
 
 .modal {
@@ -103,7 +103,7 @@
 .modal-inner {
   background-color: #fff;
   border-radius: 3px;
-  width: 63vw;
+  width: 75vw;
   margin: 50px auto;
   padding: 20px;
 }

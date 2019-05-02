@@ -138,7 +138,7 @@
 
 
 .List{
-    width: 35%;
+    width: 30%;
     }
     .List ul {
     margin: 0;
@@ -160,7 +160,7 @@
     
     .List a{
     color:rgb(0, 0, 0);
-    font-size:1.3vw;
+    font-size:1.6vw;
     font-family: 'Gabriola';
     }
     

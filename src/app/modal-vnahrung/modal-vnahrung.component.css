@@ -24,7 +24,7 @@
 }
 
 #ModalPhase3 {
-  height: 50vh;
+  height: 60vh;
   display: flex;
 }
 
@@ -37,14 +37,14 @@
 
 #ModalText {
   height: 100%;
-  width: 55%;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #ModalText p {
-  font-size: 1.1vw;
+  font-size: 1.4vw;
   width: 85%;
   font-family: 'Gabriola';
   border-radius: 20px;
@@ -53,7 +53,7 @@
 
 
 #ModalPhase4 {
-  height: 30vh;
+  height: 45vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,11 +64,11 @@
   padding: 20px 20px 20px 20px;
   margin-left: 20%;
   margin-right: 20%;
-  font-size: 2.5vw;
+  font-size: 2vw;
   background-color: #bfe2ca;
   font-family: 'Gabriola';
   border-radius: 50px;
-  text-align: center;
+  text-align: left;
 }
 
 #ModalPhase5 {
@@ -80,8 +80,8 @@
 }
 
 #ModalPhase5 p {
-  font-size: 1.3vw;
-  width: 45%;
+  font-size: 1.5vw;
+  width: 55%;
   font-family: 'Gabriola';
   border-radius: 20px;
   padding: 5px 5px 5px 5px;

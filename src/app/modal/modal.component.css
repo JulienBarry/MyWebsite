@@ -61,22 +61,6 @@
     text-align: center;
     font-family: 'gabriola';
   }
-  
-  #TextPreis2 {
-    font-size: 1.5vw;
-    text-align: center;
-  }
-  
-  #TextPreis3 {
-    font-size: 0.8vw;
-    text-align: center;
-  }
-  
-  hr {
-    height: 1px;
-    background-color: black;
-  }
-
 
   #ModalPhase4 {
     height: 70vh;
@@ -91,13 +75,13 @@
 
 #FormTitel {
   font-size: 1.5vw;
-    text-align: center;
-    position: relative;
-    background-color: #bfe2ca;
-    border-radius: 50px;
-    color: rgb(0, 0, 0);
-    font-family: 'Times New Roman';
-    float: top;
+  text-align: center;
+  position: relative;
+  background-color: #bfe2ca;
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+  font-family: 'Times New Roman';
+  float: top;
 }
 
 .formular {

@@ -166,16 +166,16 @@ h1 {
   }
   
   #TextPreis2 {
-    font-size: 1.4vw;
+    font-size: 1.8vw;
     text-align: center;
-    margin: 25px 25px 25px 25px;
+    margin: 18px;
     font-family: 'Gabriola';
   }
   
   #TextPreis3 {
-    font-size: 1.15vw;
+    font-size: 1.5vw;
     text-align: center;
-    margin: 20px 20px 20px 20px;
+    margin: 25px;
     font-family: 'Gabriola';
   }
   

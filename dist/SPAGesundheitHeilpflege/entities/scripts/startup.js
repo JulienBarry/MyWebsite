@@ -202,21 +202,7 @@ $(window).load(function() {
       });
   });
 
-  $('#kontakt').click(function (event) {
-    var $Modal = $ModalAnmeldung;
-    closeModal($Modal);
-    $Modal = $ModalKontakt;
-    event.preventDefault();
-    openModal($Modal);
-    $Modal
-      .click(function () {
-        closeModal($Modal);
-      })
-      .find('.modal-inner').click(function (event) {
-        event.stopPropagation();
-      });
   });
-});
 
 
 (function ($) {

@@ -14,6 +14,7 @@
   height: 60%;
   max-width: auto;
   right: 5%;
+  top: 20%;
 }
 
 #ImgPetra {
@@ -24,7 +25,7 @@
 
 #Phase1 p{
 
-  font-size: 1.7vw;
+  font-size: 2vw;
   text-align: center;
   position: relative;
   transform: translate(0px, -50%);
@@ -70,7 +71,7 @@ z-index: 0;
 }
 
 .TextP2 {
-  font-size: 1.4vw;
+  font-size: 1.6vw;
   width: 70%;
   font-family: 'Gabriola';
   border-radius: 20px;
@@ -92,11 +93,11 @@ z-index: 0;
 
 #Phase3 p {
   padding: 20px 20px 20px 20px;
-  font-size: 2.5vw;
+  font-size: 1.8vw;
   color: rgb(0, 0, 0);
   font-family: 'Gabriola';
   text-align: center;
-  width: 45%;
+  width: 75%;
 }
 
 #Phase4 {

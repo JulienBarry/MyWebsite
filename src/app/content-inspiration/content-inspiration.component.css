@@ -229,7 +229,7 @@
 
 
   .QList{
-    width:40%;
+    width:45%;
     }
     .QList ul {
     margin: 0;
@@ -251,7 +251,7 @@
     
     .QList a{
     color:rgb(0, 0, 0);
-    font-size:1.4vw;
+    font-size:1.6vw;
     font-family: 'Gabriola';
     
     }
@@ -308,7 +308,7 @@
     }
     
     .AList a{
-    font-size:1.4vw;
+    font-size:1.6vw;
     font-family: 'Gabriola';
     
     }

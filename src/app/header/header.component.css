@@ -6,6 +6,7 @@ a:hover {
 a {
     font-family: 'Gabriola';   
     font-size: 20pt !important; 
+    /* color: black !important; */
 }
 
 #dropdown1 {
@@ -13,7 +14,7 @@ a {
 }
 
 #dropdown1 a {
-    font-size: 14pt !important;
+    font-size: 20pt !important;
 }
 
 #dropdown1 a:hover {
